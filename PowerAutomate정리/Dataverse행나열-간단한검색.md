@@ -1,4 +1,4 @@
-# PowerAutomate 행 나열 - Dataverse 간단한 검색
+# PowerAutomate 작업 : 행 나열-Dataverse 간단한 검색
 > PowerAutomate에서 Dataverse의 행을 검색하고 불러올 수 있는데(API방식) Filter 테이블을 전부 사용할 일은 없기 때문에 필터로 조건에 맞는 것을 추려야 한다. 그런데 아직 필터링에 대해 편한 UI를 업데이트를 하지 못했는지 OData 쿼리를 사용해야 한다. 간단한 검색문을 사용해 보자.
 
 ## OData란?
