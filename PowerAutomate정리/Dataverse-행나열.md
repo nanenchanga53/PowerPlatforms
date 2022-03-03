@@ -15,4 +15,8 @@
 
 6. <span style="color:yellow">출력</span> 항목 아래의 <span style="color:yellow">다운로드하려면 클릭</span>을 클릭해보자
 
-7. 새 웹페이지가 뜨면서 
+7. 새 웹페이지가 뜨면서 반환 값을 확인 가능하다. 이 반환값을 PowerAutomate 에서 사용 가능하다.
+
+## 열 선택
+## 행 필터
+## 
