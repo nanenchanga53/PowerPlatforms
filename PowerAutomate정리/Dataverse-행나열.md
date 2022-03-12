@@ -23,10 +23,18 @@
 ## 열 선택
 > 테이블 데이터 검색시 가져올 열을 선택한다. 가져올 열은 표시 이름이 아닌 진짜 열의 이름을 가져와야하며 ','로 구분하고 왼쪽부터 오른쪽 순서대로 가져오게된다.(그런데 결과는 Json형식으로 가져오기 때문에 순서가 영향을 주지 않는다.) Odata 형식의 $select 문에 해당된다.
 
-1. 
+1. 가져올 테이블의 열의 진짜 이름을 적는다. 확인은 Power Apps의 각 테이블에서 확인하자.<br>![image](https://user-images.githubusercontent.com/39551265/158018623-b7c04440-75c3-4a44-81fb-04f417957983.png)<br>
+
+2. ',' 로 구분하여 가져올 행들을 선택<br>![image](https://user-images.githubusercontent.com/39551265/158018816-16466993-8ecb-4a34-ad8f-cbf0247fe211.png)<br>
+
+* XrmToolBox의 Fetch XML Builder 를 사용한다면 다음과 비슷할 것이다.<br>![image](https://user-images.githubusercontent.com/39551265/158018775-d4f0326c-79cd-478a-bbb2-a03439d66c5d.png)<br>
 
 ## 행 필터
 > Dataverse의 API 통신시 $filter에 해당되는 값이다. 검색의 조건을 정한다.
+1. OData 통신의 API 통신 중 $filter에 해당되는 부분의 식과 함수를 통해 검색 기준을 설정한다. 이때 열의 이름은 진짜 이름이여야 한다.<br>![image](https://user-images.githubusercontent.com/39551265/158018933-17a404b4-e77e-4207-ba6b-077daa7e8d3d.png)<br>
+
+* XrmToolBox의 Fetch XML Builder 를 사용한다면 다음과 비슷할 것이다.<br>![image](https://user-images.githubusercontent.com/39551265/158019002-79cd2bc8-e2d0-4f68-b5a5-bf2bdf8f56ff.png)<br>
+
 ## 정렬 기준
 > Dataverse의 API 통신시 $order에 해당되는 값이다. 검색내용의 정렬조건을 정한다. 
 ## 쿼리 확장
