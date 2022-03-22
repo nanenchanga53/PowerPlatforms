@@ -36,10 +36,16 @@
 * XrmToolBox의 Fetch XML Builder 를 사용한다면 다음과 비슷할 것이다.<br>![image](https://user-images.githubusercontent.com/39551265/158019002-79cd2bc8-e2d0-4f68-b5a5-bf2bdf8f56ff.png)<br>
 
 ## 정렬 기준
-> Dataverse의 API 통신시 $order에 해당되는 값이다. 검색내용의 정렬조건을 정한다. 
+> Dataverse의 API 통신시 $order에 해당되는 값이다. 정렬조건을 정한다. 
+
+1. OData 통신의 API 통신시 $order에 해당되는 부분의 식과 함수를 통해 정렬 조건을 설정한다. 이때 열의 이름은 진짜 이름이여야 한다.
+
+* XrmToolBox의 Fetch XML Builder 를 사용한다면 다음과 비슷할 것이다.
+
 ## 쿼리 확장
 ## XML 쿼리 가져오기
 > FetchXML 쿼리문을 사용하여 검색할 수 있다. 이제는 사용하지 않는게 더 좋기에 여기서 사용법을 다루지 않겠다.
 ## 행 수
 > 가져오는 행의 최대개수를 정한다. 기본값은 5000이다.
 ## 토큰 건너뛰기
+> 가져오는 행의 일부분을 스킵 후 가져온다.
