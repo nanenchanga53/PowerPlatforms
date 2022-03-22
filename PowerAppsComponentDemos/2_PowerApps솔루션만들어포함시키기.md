@@ -7,7 +7,7 @@
 
 2. PowerShell을 열어 다음 명령어를 실행해 솔루션을 초기화한다.
     ```PowerShell
-    PowerShell을 열어 이전 Power Apps 
+    pac solution init --publisher-name mslearn --publisher-prefix msl
     ```
 
 3. 다음 명령어를 통해 코드 구성요소를 솔루션에 추가한다.

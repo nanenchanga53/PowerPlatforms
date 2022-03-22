@@ -3,11 +3,15 @@
 
 ## 코드 구성요소 초기화
 1. 다음 명령을 파워쉘에서 실행해 초기화된 프로젝트를 만든다.
+
+
     ```PowerShell
     pac pcf init --namespace SampleControls --name ReactStandardControl --template field
     ```
 
 2. 다음 종속성을 package.json의 "dependencies" 안에 추가한다.(React 및 Office UI 라이브러리 사용)
+
+
     ```json
     "office-ui-fabric-react": "^6.189.0",
     "react": "^16.8.6",
@@ -15,12 +19,16 @@
     ```
 
 3. 다음 종속성을 package.json의 "devDependencies" 안에 추가한다.(설치 확인)
+
+
     ```json
     "@types/react": "^16.8",
     "@types/react-dom": "^16.8"
     ```
 
 4. tsconfig.json 에 "compilerOptions" 안에 추가하여 컴파일러가 React를 사용하도록 설정한다.
+
+
     ```
     "jsx": "react",
     "jsxFactory": "React.createElement"
@@ -28,6 +36,8 @@
 
 
 5. 다음 명령어를 입력하여 프로젝트에 종속 라이브러리를 로드한다.
+
+
     ```powershell
     npm install
     ```
@@ -35,6 +45,8 @@
 ## 코드 구성요소 로직 구현
 
 1. 코드 구성 요소의 매니페스트 파일(ControlManifest.Input.xml)을 열고 다음과 같이 바꾼다.
+
+
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <manifest>
@@ -50,6 +62,8 @@
     ```
 
 2. index.ts 파일을 열고 최상단에 다음 import 문을 추가한다.
+
+
     ```ts
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
     import * as React from "react";
@@ -58,6 +72,8 @@
     ```
 
 3. 클래스 내부 최상단에 다음 private 변수를 삽입
+
+
     ```ts
     // notifyOutputChanged 매소드의 참조
     private notifyOutputChanged: () => void;
@@ -71,6 +87,8 @@
     ```
 
 4. 다음 로직을 init 함수 안에 추가한다.
+
+
     ```ts
     this.notifyOutputChanged = notifyOutputChanged;
     this.props.numberOfFaces = context.parameters.numberOfFaces.raw || 3;
@@ -78,6 +96,8 @@
     ```
 
 5. 다음 로직을 updateView 함수 안에 추가한다.
+
+
     ```ts
     if (context.updatedProperties.includes("numberOfFaces"))
         this.props.numberOfFaces = context.parameters.numberOfFaces.raw || 3;
@@ -94,11 +114,15 @@
     ```
 
 6. 다음 로직을 getOutputs 함수 안에 추가한다.
+
+
     ```ts
     numberOfFaces: this.props.numberOfFaces
     ```
 
 7. 다음 로직을 destroy 함수 안에 추가한다.
+
+
     ```ts
     ReactDOM.unmountComponentAtNode(this.theContainer);
     ```
@@ -204,6 +228,8 @@
 2. CSS 폴더 안에 ReactStandardControl.css 파일을 추가한다.
 
 3. ReactStandardControl.css 에 다음 css 스타일을 입력한다.
+
+
     ```css
     .msFacepileExample {
     max-width: 300px;
