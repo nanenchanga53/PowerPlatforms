@@ -23,3 +23,5 @@
 9. power apps 파워 BI 통합(https://docs.microsoft.com/ko-kr/learn/modules/portals-integration/3-power-bi)
 
 10. 파워앱스 portal
+
+11. Power Bi(https://docs.microsoft.com/ko-kr/powerapps/maker/canvas-apps/how-to/build-powerbi-visual)
