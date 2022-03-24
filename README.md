@@ -25,3 +25,7 @@
 10. 파워앱스 portal
 
 11. Power Bi(https://docs.microsoft.com/ko-kr/powerapps/maker/canvas-apps/how-to/build-powerbi-visual)
+
+12. 파워오토메이트 Dataverse API 제한(https://docs.microsoft.com/ko-kr/learn/modules/power-automate-architecture/4-error-handling)
+
+13. Dataverse 유형설명(https://docs.microsoft.com/ko-kr/learn/modules/data-modeling/5-dataverse)
