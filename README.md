@@ -6,26 +6,30 @@
 
 1. dynamics365 와 sharepoint 통합(https://www.crmsoftwareblog.com/2020/02/how-to-setup-a-dynamics-365-integration-with-sharepoint/)(https://docs.microsoft.com/en-us/power-platform/admin/enable-sharepoint-document-management-specific-entities)
 
-2. 파워앱스 코드 구성요소
+1. 파워앱스 코드 구성요소
 
-3. 파워오토메이트 작업(종류 추가)
+1. 파워FX (https://github.com/microsoft/Power-Fx/blob/main/docs/overview.md)
 
-4. 파워앱스 컨트롤 설명
+1. 파워오토메이트 작업(종류 추가)
 
-5. D365 권한(https://docs.microsoft.com/en-us/dynamics365/customer-service/create-design-forms-customer-service-hub)
+1. 파워앱스 컨트롤 설명
 
-6. Power Automate 커스텀 커넥터(https://docs.microsoft.com/en-us/power-automate/developer/register-custom-api)(https://massyuu.hatenablog.com/entry/2021/08/27/114319)
+1. 파워앱스 변수,콜렉션
 
-7. 파워오토메이트 비지니스 흐름
+1. D365 권한(https://docs.microsoft.com/en-us/dynamics365/customer-service/create-design-forms-customer-service-hub)
 
-8. D365 데이터 내보내기(https://blog.crgroup.com/dynamics-365-latest-feature-the-data-export-service/)
+1. Power Automate 커스텀 커넥터(https://docs.microsoft.com/en-us/power-automate/developer/register-custom-api)(https:/massyuu.hatenablog.com/entry/2021/08/27/114319)
 
-9. power apps 파워 BI 통합(https://docs.microsoft.com/ko-kr/learn/modules/portals-integration/3-power-bi)
+1. 파워오토메이트 비지니스 흐름
 
-10. 파워앱스 portal
+1. D365 데이터 내보내기(https://blog.crgroup.com/dynamics-365-latest-feature-the-data-export-service/)
 
-11. Power Bi(https://docs.microsoft.com/ko-kr/powerapps/maker/canvas-apps/how-to/build-powerbi-visual)
+1. power apps 파워 BI 통합(https://docs.microsoft.com/ko-kr/learn/modules/portals-integration/3-power-bi)
 
-12. 파워오토메이트 Dataverse API 제한(https://docs.microsoft.com/ko-kr/learn/modules/power-automate-architecture/4-error-handling)
+1. 파워앱스 portal
 
-13. Dataverse 유형설명(https://docs.microsoft.com/ko-kr/learn/modules/data-modeling/5-dataverse)
+1. Power Bi(https://docs.microsoft.com/ko-kr/powerapps/maker/canvas-apps/how-to/build-powerbi-visual)
+
+1. 파워오토메이트 Dataverse API 제한(https://docs.microsoft.com/ko-kr/learn/modules/power-automate-architecture/-error-handling)
+
+1. Dataverse 유형설명(https://docs.microsoft.com/ko-kr/learn/modules/data-modeling/5-dataverse)
