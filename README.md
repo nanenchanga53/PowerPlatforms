@@ -47,3 +47,7 @@
 - Power BI 사용법
 
 - Power BI 트리거 사용
+
+- Active Directory
+
+- Dataverse 권한별 보여지는 범위
