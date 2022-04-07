@@ -68,7 +68,7 @@
 ## 토큰 건너뛰기
 > 페이지 매김 설정을 하지 않고 한번에 검색을 사용시 5000개 보다 더 많은 행을 검색했지만 가져오지 못했을시 해당 '행 나열' 작업에서 '다음 링크'로 반환한다.
 
-1.  <span style="color:red">... -< 설정</span> 에서  이때 '페이지 매김' 항목을 끄기로 설정한다.<br>![image](https://user-images.githubusercontent.com/39551265/160280283-9a559f83-7489-4c34-952c-27698c84bd63.png)<br>
+1.  <span style="color:red">... -> 설정</span> 에서  이때 '페이지 매김' 항목을 끄기로 설정한다.<br>![image](https://user-images.githubusercontent.com/39551265/160280283-9a559f83-7489-4c34-952c-27698c84bd63.png)<br>
 
 2. 이후 작업에서 '다음 링크' 동적 콘텐츠를 저장하고 쿠키값을 선택하여 사용하면 된다.(더 자세한 내용은 별도 문서에서 설명하겠다.)<br>![image](https://user-images.githubusercontent.com/39551265/160281986-730f8a67-ca55-4196-bc59-cfec9f4abc8d.png)<br>
 
