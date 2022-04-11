@@ -1,7 +1,7 @@
 # Power Apps(캔버스앱)에서 CSV로 다운로드
 > 캔버스앱에서 CSV파일을 다운로드 받는 방식을 설명한다. 이 문서에서는 Dataverse안에 있는 데이터 원본을 Power Automate를 이용해 원하는 저장소에 파일을 저장하는 과정을 설명한다.
 
-## 캔버스 앱에서 데이터 원본을 JSON 형태의 파일로 만들기
+## 캔버스 앱에서 데이터 원본을 JSON 형태의 데이터로 만들기
 
 1. 캔버스 앱에서 데이터 테이블(Dataverse 테이블)을 연결한다. [데이터 연결방법](https://github.com/nanenchanga53/PowerPlatforms/blob/main/%ED%8C%8C%EC%9B%8C%EC%95%B1%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A1%A4/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%B0%EA%B2%B0.md)<br><br>![image](https://user-images.githubusercontent.com/39551265/162657858-ae89cd9f-47dc-4280-80e4-aee843b98ed2.png)<br>
 
@@ -50,8 +50,22 @@
 
 4. 그 후 한번 테스트를 해서 'JSON 구문 분석' 동작에서 생성하는 '동적값/동적 컨텐츠' 값을 사용 가능 하도록 만든다.
 
-5. 
+5. 다음 단계에서 'CSV 테이블 만들기' 단계를 추가해 'JSON 구문 분석' 단계에서 생성한 본문을 '보낸 사람'(데이터 원본 from이다) 항목에 집어넣는다. [CSV 테이블 만들기](https://github.com/nanenchanga53/PowerPlatforms/blob/main/PowerAutomate%EC%A0%95%EB%A6%AC/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9E%91%EC%97%85-%20CSV%ED%85%8C%EC%9D%B4%EB%B8%94%EB%A7%8C%EB%93%A4%EA%B8%B0.md)<br><br>![image](https://user-images.githubusercontent.com/39551265/162676169-ead1afbf-2cd3-43c1-a99c-2e28ce47aca5.png)
+<br>
+
+6. 다음 단계에서 저장할 위치에 콘텐츠를 만들어 저장하는 단계를 만든다.(필자는 OneDrive의 '파일 만들기'를 선택)<br><br>![image](https://user-images.githubusercontent.com/39551265/162677087-65484be0-1d81-4d75-8f60-34a135eb2e68.png)<br>
+
+7. '폴더 경로'를 선택 하고 '파일 이름'을 `{파일이름}.csv` 형식으로 지정한다.
+
+8. '파일 콘텐츠' 항목에 <span style="color:red">Fx</span> 버튼을 눌러 식을 추가한다.<br>식은 다음과 비슷하게 만든다.<br>concat을 추가하여 문자열을 csv테이블에 BOM을 추가하도록 만든다.<br>uriComponentToString을 이용해 UTF-8 형식의 문자열 타입을 지정하는 BOM을 추가한다. concat의 첫번째 항목은 다음과 같이 만든다. `uriComponentToString('%EF%BB%BF')`<br>두번째 항목은 해당 위치에서 '동적값/동적 컨텐츠'에서 선택하면 추가된다. `body('CSV_테이블_만들기')` 와 비슷하게 추가될 것이다.<br>완성된 식은 다음과 같다. `concat(uriComponentToString('%EF%BB%BF'),body('CSV_테이블_만들기'))` <br><br>![image](https://user-images.githubusercontent.com/39551265/162678297-e1c8bc70-d7ff-49e8-8519-d57d3ff3cbcf.png)<br>
+
+* BOM 이란
+> BOM 이란 문서의 맨 앞부분에 눈에 보이지 않는 특정 바이트(Byte)를 넣은 다음 해당 문서의 인코딩 방식이 어떠한 인코딩 방식으로 사용되었는지 알아내는 방법을 나타낸다. 이것을 설정하지 않으면 Power Automate에서 파일을 저장시 UTF-8로 저장하는데 엑셀 등에서 파일을 실행할때 한글이 깨지면서 나올 것이다.
 
 ## 흐름을 캔버스앱에서 실행
 
 1. 파워 앱스의 흐름을 실행하는 함수를 만들어 추가한다. [PowerAutomate 실행함수 만들기](https://github.com/nanenchanga53/PowerPlatforms/blob/main/%ED%8C%8C%EC%9B%8C%EC%95%B1%EC%8A%A4%EC%BB%A8%ED%8A%B8%EB%A1%A4/PowerAutomate%EC%8B%A4%ED%96%89%ED%95%A8%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
+
+2. Power Automate를 실행하는 함수를 추가한 동작(이벤트) 위치에서 Set으로 생성한 변수를 파라메터를 포함한다.<br>![image](https://user-images.githubusercontent.com/39551265/162680716-d8ce0886-d836-4da9-9269-4924a4505029.png)<br>
+
+2. 실행 후 저장위치에서 제대로 파일이 생성됬는지 확인한다.
