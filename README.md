@@ -51,3 +51,5 @@
 - Active Directory
 
 - Dataverse 권한별 보여지는 범위
+
+- 호출 한도 및 할당량 증가(https://docs.microsoft.com/ko-kr/power-platform/admin/api-request-limits-allocations)
