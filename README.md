@@ -53,3 +53,5 @@
 - Dataverse 권한별 보여지는 범위
 
 - 호출 한도 및 할당량 증가(https://docs.microsoft.com/ko-kr/power-platform/admin/api-request-limits-allocations)
+
+- 모델기반앱에서 캔버스앱위치설정(https://docs.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/navigate-to-custom-page-examples#open-as-a-side-dialog)
