@@ -11,7 +11,7 @@
 
 3. <span style="color:red">문서에서 사용자 지정 정보 추출</span> 클릭<br>![image](https://user-images.githubusercontent.com/39551265/158506984-0a5b44ac-f225-4feb-bf75-6191b9ac570b.png)<br>
 
-4. '시작'을 클릯해 양식 처리 모델을 만든다.<br>![image](https://user-images.githubusercontent.com/39551265/158507348-eaebbe29-c3f4-4c40-b458-c138648dace9.png)<br>
+4. '시작'을 클릭해 양식 처리 모델을 만든다.<br>![image](https://user-images.githubusercontent.com/39551265/158507348-eaebbe29-c3f4-4c40-b458-c138648dace9.png)<br>
 
 5. 현재 양식 처리 모델 페이지에 있을태지만 해당 페이지가 잘 만들었는지 확이하려면 '저장 후 닫기'로 페이지에서 벗어나자
 
