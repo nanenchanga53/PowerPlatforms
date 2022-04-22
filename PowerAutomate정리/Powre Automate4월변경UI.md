@@ -1,5 +1,11 @@
-# Power Automate 4월 변경 UI
-> 4월부터 동적값,식의 입력시 한줄로 밖에 못보거나 문자를 타이핑하면 지워진다거나 하는 문제가 있었다. 현재 이것을 해결해 PowerAutoamte에서 UI가 변경되었다.
+# Power Automate UI 변경
+
+> 현재 식의 입력시 한줄로 밖에 못보거나 문자를 타이핑하면 지워진다거나 하는 문제가 있었다. 현재 이것을 해결해 실험적 기능을 사용시 PowerAutoamte에서 UI가 변경되며 좀 더 편하게 사용이 가능하다.
+
+## 실험적 기능 사용
+
+1.  우선 우상단의 톱니바퀴를 눌러 '모든 PowerAutomate 설정 보기'를 클릭<br><br>![image](https://user-images.githubusercontent.com/39551265/164391351-44a2605e-3b96-46c9-b66a-a4f877f0d385.png)<br>
+2.  '실험적 기능'을 설정하고 '저장'한다.<br><br>![image](https://user-images.githubusercontent.com/39551265/164391542-4463b4a1-9609-4dd0-8e9a-f67c496eefd0.png)<br>
 
 ## 값 검색
 1. 몇몇 입력값을 검색시 리스트박스에 직적 텍스트를 적어야 했는데 이때 텍스트가 씹히는 경우가 있었다.<br>![image](https://user-images.githubusercontent.com/39551265/159388229-e4779fee-db60-4ab0-9c8e-a6415b776c57.png)<br> 
