@@ -1,4 +1,4 @@
-# Office 365 Users - 관리자 불러오기
+# Power Automate 작업 : Office 365 Users - 관리자 불러오기
 > Microsoft 365 관리센터나 Azure Active Dirctory 에서 사용자의 관리자를 설정해둔 것을 손쉽게 가져오는 작업을 Power Automate에서 지원한다. 관리자 설정은 [사용자의 관리자설정](https://github.com/nanenchanga53/PowerPlatforms/blob/main/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8365%EA%B4%80%EB%A6%AC%EC%84%BC%ED%84%B0/%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B4%80%EB%A6%AC%EC%9E%90%EC%84%A4%EC%A0%95.md)을 확인하자.
 
 ## 흐름에 관리자 불러오기 작업 추가
