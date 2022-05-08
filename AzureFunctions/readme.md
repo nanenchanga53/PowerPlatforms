@@ -1,0 +1,1 @@
+이후 Power Automate에서 아용할 Azure Functions 샘플
