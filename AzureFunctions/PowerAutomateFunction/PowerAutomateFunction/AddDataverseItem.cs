@@ -18,7 +18,7 @@ namespace PowerAutomateFunction
     public static class AddDataverseItem
     {
         [FunctionName("AddSample")]
-        [OpenApiOperation(operationId: "Run")]
+        [OpenApiOperation(operationId: "Run", tags: new[] { "apikey" }, Summary = "쿼리스트링으로 인증", Description = "API 쿼리 key로 인증하고 샘플 데이터 반환", Visibility = OpenApiVisibilityType.Important)]
         [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "text/plain", bodyType: typeof(string), Description = "The OK response")]
         public static async Task<IActionResult> Run(
@@ -34,7 +34,7 @@ namespace PowerAutomateFunction
             name = name ?? data?.name;
 
             var json = new JObject();
-            json.Add("ClientName", "메타넷3");
+            json.Add("ClientName", "WoochangCo3");
             json.Add("Pic", "김 우창");
             json.Add("Work", true);
             json.Add("ClientCategory", 601760000);

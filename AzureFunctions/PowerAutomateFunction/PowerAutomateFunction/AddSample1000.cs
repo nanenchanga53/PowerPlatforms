@@ -39,7 +39,7 @@ namespace PowerAutomateFunction
             {
 
                 var json = new JObject();
-                json.Add("ClientName", "메타넷" + i.ToString());
+                json.Add("ClientName", "WoochangCo" + i.ToString());
                 json.Add("Pic", "김 우창");
                 json.Add("Work", true);
                 json.Add("ClientCategory", 601760000);
