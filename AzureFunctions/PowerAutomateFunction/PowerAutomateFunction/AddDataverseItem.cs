@@ -18,9 +18,9 @@ namespace PowerAutomateFunction
     public static class AddDataverseItem
     {
         [FunctionName("AddSample")]
-        [OpenApiOperation(operationId: "Run", tags: new[] { "apikey" }, Summary = "쿼리스트링으로 인증", Description = "API 쿼리 key로 인증하고 샘플 데이터 반환", Visibility = OpenApiVisibilityType.Important)]
-        [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]
-        [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "text/plain", bodyType: typeof(string), Description = "The OK response")]
+        [OpenApiOperation(operationId: "ReturnSample1", tags: new[] { "apikey" }, Summary = "테스트 데이터 1개", Description = "API 쿼리 key로 인증하고 샘플 데이터 반환(1개)", Visibility = OpenApiVisibilityType.Important)]
+        [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "x-functions-key", In = OpenApiSecurityLocationType.Header)]
+        [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "text/plain", bodyType: typeof(string), Description = "The OK response" , Summary = "샘플값반환")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
@@ -44,7 +44,7 @@ namespace PowerAutomateFunction
 
 
 
-            return new JsonResult(json);
+            return new OkObjectResult(json.ToString());
         }
     }
 }
