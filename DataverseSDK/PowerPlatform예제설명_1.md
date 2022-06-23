@@ -95,6 +95,4 @@ static void Main(string[] args)
 
 1. 인증에대한 정책이 바뀌면서 `.Net core 3.1` 이상의 버전에서 SDK를 사용하도록 제공하려는 것으로 보인다.
 
-2. 현재는 Client 대한 것만 새로운 package를 제공하고 다른 메시지나 데이터 처리, 플러그인 등이 아직 .NetFramework 기반인 것이 아쉽다. 아직 윈도우 서버를 제외한 OS는 사용하는데 주의해야 한다.
-
-3. 현재 기존 `crmSDK`라 이름이 붙은 것들은 새로이 SDK를 개발하는 것보다는 프로젝트에서 위의 인증방식을 사용이 가능하도록 수정중인것으로 보인다. 이후 Core 이상을 정식으로 지원하는 `Microsoft.Dynamics.Sdk.Messages`가 정식 버전이 출시되기 전에는 최신 C#문법을 사용하는 것에는 주의를 해야한다.
+2. Client package를 받은 것 만으로 기존 Xrm, Crm SDK가 같이 설치된다. 기존의 .NET Framework때 사용되는 SDK를 통합하여 새로운 .NET 버전에서도 돌아가게 하도록 만드는 것으로 보인다. 하지만 .NET Framework 기반으로 만들어졌던 SDK라 리눅스 등의 OS에서 사용시에는 주의해야할 것이다. 
