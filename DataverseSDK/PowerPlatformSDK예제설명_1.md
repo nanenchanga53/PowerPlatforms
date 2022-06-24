@@ -8,7 +8,7 @@
 
 2. Visual Studio 사용자라면 `ServiceClient.sln` 파일을 열어 Visual Studio를 실행한다.
 
-3. 프로젝트 세팅 파일로 사용할 `appsettings.json` 파일을 확인하면 프로젝트를 빌드시 생성이 가능하도록 '출력 디렉토리로 복사'가 새 버전이면 복사로 되어 있는 것을 확인 가능하다. 만약 Visual Studio를 사용하지 않는다면 .Proj 파일을 열어 `<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>`가 되어있는것을 확인하면 된다. <br><br>![image](https://user-images.githubusercontent.com/39551265/174945190-241c5247-c800-44ec-97fd-5bd1de7ef7f3.png)<br>
+3. 프로젝트 세팅 파일로 사용할 `appsettings.json` 파일을 확인하면 프로젝트를 빌드시 생성이 가능하도록 '출력 디렉토리로 복사'가 새 버전이면 복사로 되어 있는 것을 확인 가능하다. 만약 Visual Studio를 사용하지 않는다면 .csproj 파일을 열어 `<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>`가 되어있는것을 확인하면 된다. <br><br>![image](https://user-images.githubusercontent.com/39551265/174945190-241c5247-c800-44ec-97fd-5bd1de7ef7f3.png)<br>
 
 4. 해당 프로젝트의 'Nuget 패키지 관리자'를 열어 Dataverse의 연결을 위한 `Microsoft.PowerPlatform.Dataverse.Client` 와 설정을 위한 `Microsoft.Extensions.Configuration`, `Microsoft.Extensions.Configuration.Json` 이 설치되어있는 것을 확인한다.<br><br>![image](https://user-images.githubusercontent.com/39551265/174945886-7b4c34ed-e2c1-44b6-9357-3fa0b35bf925.png)<br>
 
@@ -67,14 +67,14 @@ Program()
 2. 메시지요청 `Main()`
     * ServiceClinet를 선언하고 선언시 설정값에 있는 연결문자열을 사용한다.
     * 유저의 접속 ID인 WhoAmiI를 반환한다. (접속을 새로할때마다 반환값이 다를 것이다.)
-    * 접속을 종료시에는 `Dispose`를 이요해 종료한다.
+    * 접속을 종료시에는 `Dispose`를 이용해 종료한다.
 
 ```c#
 static void Main(string[] args)
 {
     Program app = new();
 
-    // default에 설정된 연결문자열을 가져오 serviceClient를 생성.
+    // default에 설정된 연결문자열을 가져와 serviceClient를 생성.
     ServiceClient serviceClient = 
         new( app.Configuration.GetConnectionString("default") );
 
@@ -95,4 +95,4 @@ static void Main(string[] args)
 
 1. 인증에대한 정책이 바뀌면서 `.Net core 3.1` 이상의 버전에서 SDK를 사용하도록 제공하려는 것으로 보인다.
 
-2. Client package를 받은 것 만으로 기존 Xrm, Crm SDK가 같이 설치된다. 기존의 .NET Framework때 사용되는 SDK를 통합하여 새로운 .NET 버전에서도 돌아가게 하도록 만드는 것으로 보인다. 하지만 .NET Framework 기반으로 만들어졌던 SDK라 리눅스 등의 OS에서 사용시에는 주의해야할 것이다. 
+2. Client package를 받은 것 만으로 기존 Xrm, Crm SDK가 같이 설치된다. 기존의 .NET Framework때 사용되는 SDK를 통합하여 새로운 .NET 버전에서도 돌아가게 하도록 만드는 것으로 보인다. 하지만 .NET Framework 기반으로 만들어졌던 SDK라 리눅스 등의 OS에서 사용시에는 주의해야할 것이다. <br><br>![image](https://user-images.githubusercontent.com/39551265/175187959-d4b7497a-0ae6-4529-8125-9fc3ff3fa0b5.png)<br>
