@@ -1,4 +1,4 @@
-# C# - ConfigurationBier 1 - ConfigurationBuilder란?
+# C# - ConfigurationBuilder 1 - ConfigurationBuilder란?
 > ConfigurationBuilder는 .NET 에서 키-값 형태로 외부에서 설정을 참조할 수 있는 라이브러리입니다. 작업하려는 각 데이터 원본에 대해 공급자가 제공됩니다.
 
 ## 기본적인 데이터 원본
