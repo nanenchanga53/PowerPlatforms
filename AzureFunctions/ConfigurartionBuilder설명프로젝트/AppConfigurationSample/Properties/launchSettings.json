@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AppConfigurationSample": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "EnvSetting": "EnvSetting"
+      }
+    }
+  }
+}
