@@ -1,0 +1,8 @@
+{
+  "TestSetting": {
+    "Test1": "Test1_True",
+    "Test2": "설정2_True",
+    "Test3": "속성3_True"
+  },
+  "TestSet": "setting_True"
+}

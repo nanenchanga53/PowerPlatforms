@@ -1,0 +1,8 @@
+{
+  "TestSetting": {
+    "Test1": "Test1",
+    "Test2": "설정2",
+    "Test3": "속성3"
+  },
+  "TestSet": "setting"
+}
