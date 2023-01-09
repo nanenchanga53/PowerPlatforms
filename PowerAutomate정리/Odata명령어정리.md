@@ -36,11 +36,14 @@
 |or|논리연산 OR|"$filter"="Value eq 2 or Value eq 1"|
 |not|논리연산 부정|"$filter"="(Value ne null) and not (Value eq 1)"|
 
+
 |함수|설명|예제|
 |---|---|---|
 |startswith|시작문자열 포함여부|"$filter"="startswith(Name, 'a')"|
 |substringof|문자열이 포함되어있는여부|"$filter"="substringof('store',Name)"|
 |endswith|종료문자열 포함여부|"$filter"="endswith(Name, '(sample)'")|
+|contains|포함|""$filter"="contains(Name, 1000)"|
+|not contains|포함|""$filter"="not contains(Name, 1000)"|
 ## $orderBy
 > 테이블에서 반환되는 행의 순서를 정한다. SQL의 OrderBy 라고 생각하자
 
