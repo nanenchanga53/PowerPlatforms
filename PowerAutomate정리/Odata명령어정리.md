@@ -49,7 +49,7 @@
 
 ```
     Price값을 역순으로 정렬
-    "$orderby" : "Price desc"
+    "$orderby" : "Price desc" 
 ```
 
 ## $top
