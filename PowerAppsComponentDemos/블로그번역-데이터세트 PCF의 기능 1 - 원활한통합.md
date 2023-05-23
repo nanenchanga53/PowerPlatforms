@@ -5,7 +5,7 @@
 
 우선, DataSet를 사용한 PCF를 사용하려는 이유는 무엇일까? 필드 PCF로도 리퀘스트와 데이터를 표시를 할 수 있는데, 어쨌든 Data Set PCF를 사용하면 어떤 이점이 있을까?
 
-한 가지 이유는 PCF Framework Runtime에서 제공하는 데이터를 얻을 수 있기 때문이다. 이를 통해 (대역외 발사)OOB 구성 요소와 유사한 사용자 지정 환경에 통합할 수 있다. 원하는 엔티티 또는 서브 그리드를 선택할 수 있으며 이전 HTML WebResources에서와 같이 일부 구성 리소스 내에서 일부 fetchXml을 정의하지 않아도된다.
+한 가지 이유는 PCF Framework Runtime에서 제공하는 데이터를 얻을 수 있기 때문이다. 이를 통해 (대역외 발사)OOB 구성 요소와 유사한 사용자 지정 환경에 통합할 수 있다. 원하는 엔티티 또는 서브 그리드를 선택할 수 있으며 이전 HTML WebResources에서와 같이 일부 구성 리소스 내에서 일부 fetchXml나 OData를 정의하지 않아도된다.
 
 또 다른 중요한 고려 사항은 PCF 구성 요소를 ModelDriven 앱뿐만 아니라 CanvasApps, Power Pasges(미리보기) 내에서도 사용할 수 있다는 것이다. 따라서 Dataverse에만 국한되지 않는다. 이는 SQL 테이블, Excel 통합 문서, SharePoint List 등과 같은 모든 종류의 데이터 소스에 대한 다양성을 의미한다.
 
