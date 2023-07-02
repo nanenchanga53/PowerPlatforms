@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyName>Modules.Capture.Tests</AssemblyName>
+		<Version>1.0.0.0000</Version>
+		<AssemblyTitle>Modules.Capture.Tests</AssemblyTitle>
+		<TargetFramework>net472</TargetFramework>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="Microsoft.CSharp" />
+	</ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../Modules.Capture/Modules.Capture.csproj" />
+    </ItemGroup>
+
+	<ItemGroup>
+        <PackageReference Include="Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK" Version="1.4.232.23122-rc" />
+		<PackageReference Include="Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Tests" Version="1.4.341-rc" />
+        <PackageReference Include="MSTest.TestAdapter" Version="2.2.*" />
+        <PackageReference Include="MSTest.TestFramework" Version="2.2.*" />
+	</ItemGroup>
+</Project>
